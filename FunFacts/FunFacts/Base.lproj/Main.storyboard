@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6246" systemVersion="13F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="vXZ-lx-hvc">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6239"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="ufC-wZ-h7g">
+            <objects>
+                <viewController id="vXZ-lx-hvc" customClass="ViewController" customModule="FunFacts" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
+                        <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Did you know ?" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZB3-Ng-fBW">
+                                <rect key="frame" x="50" y="100" width="226" height="38"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="lessThanOrEqual" constant="226" id="2Fs-ue-wqX"/>
+                                    <constraint firstAttribute="width" relation="lessThanOrEqual" constant="226" id="3EY-1c-T4u"/>
+                                    <constraint firstAttribute="height" relation="lessThanOrEqual" constant="38" id="3UH-Sb-za7"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="116" id="9og-SU-4QQ"/>
+                                    <constraint firstAttribute="width" constant="226" id="Km4-2h-Sxa"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="22" id="alf-j7-2VM"/>
+                                    <constraint firstAttribute="height" relation="lessThanOrEqual" constant="38" id="awo-QA-R7i"/>
+                                    <constraint firstAttribute="height" relation="lessThanOrEqual" constant="38" id="e1o-B9-hSO"/>
+                                    <constraint firstAttribute="width" relation="lessThanOrEqual" constant="226" id="gCI-JP-rYm"/>
+                                    <constraint firstAttribute="height" constant="38" id="lrF-XU-NXx"/>
+                                    <constraint firstAttribute="width" relation="lessThanOrEqual" constant="226" id="pDD-8j-RC3"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="30"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="0.5" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fPg-oC-aiq">
+                                <rect key="frame" x="39" y="437" width="243" height="47"/>
+                                <color key="backgroundColor" red="1" green="1" blue="0.99607843139999996" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="47" id="LIF-iP-FjB"/>
+                                    <constraint firstAttribute="width" constant="243" id="iTk-d8-rRG"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="16"/>
+                                <color key="tintColor" red="0.35294117650000001" green="0.73333333329999995" blue="0.70980392160000005" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="Show fact">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="showfact" destination="vXZ-lx-hvc" eventType="touchUpInside" id="hAT-bl-jl4"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Facts about Pakistan" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BTA-85-2b0">
+                                <rect key="frame" x="35" y="37" width="256" height="27"/>
+                                <color key="tintColor" red="0.35294117650000001" green="0.73333333329999995" blue="0.70980392160000005" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="256" id="5tC-lV-dgi"/>
+                                    <constraint firstAttribute="height" constant="27" id="7nN-YM-C5O"/>
+                                    <constraint firstAttribute="width" constant="256" id="Hvj-be-ewz"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="27" id="Rwl-qQ-mHo"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="25"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="0.5" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="The world’s highest paved international road, The Karakoram Highway, is in Pakistan which is the eighth wonder of the world" lineBreakMode="tailTruncation" numberOfLines="7" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ei2-Qk-e9h">
+                                <rect key="frame" x="34" y="137" width="242" height="278"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" relation="lessThanOrEqual" constant="292" id="8Oh-zg-mZF"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="99" id="Uto-Wd-yl1"/>
+                                    <constraint firstAttribute="height" constant="278" id="fKn-04-sUw"/>
+                                    <constraint firstAttribute="width" constant="242" id="keZ-ai-rD6"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="242" id="y0E-NS-7eL"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="26"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="0.5" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.3529411764705882" green="0.73333333333333328" blue="0.70980392156862748" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="fPg-oC-aiq" secondAttribute="bottom" constant="84" id="CG5-je-44O"/>
+                            <constraint firstItem="BTA-85-2b0" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="17" id="DcS-OC-Tyc"/>
+                            <constraint firstItem="ZB3-Ng-fBW" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="80" id="Gd9-AC-ACU"/>
+                            <constraint firstItem="fPg-oC-aiq" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" constant="23" id="HCk-oh-wTx"/>
+                            <constraint firstItem="ZB3-Ng-fBW" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" constant="34" id="MzD-Kb-Jly"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="ZB3-Ng-fBW" secondAttribute="trailing" constant="28" id="Vse-RW-GgL"/>
+                            <constraint firstItem="ZB3-Ng-fBW" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" constant="34" id="f9i-Dt-jT4"/>
+                            <constraint firstItem="BTA-85-2b0" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" constant="19" id="oIj-HV-Eab"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="funfactlabel" destination="Ei2-Qk-e9h" id="Ipb-kt-EuE"/>
+                        <outlet property="showfactbutton" destination="fPg-oC-aiq" id="U4a-NR-CF9"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="224" y="264"/>
+        </scene>
+    </scenes>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4"/>
+    </simulatedMetricsContainer>
+</document>
