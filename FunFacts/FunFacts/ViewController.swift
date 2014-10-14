@@ -15,7 +15,8 @@ class ViewController: UIViewController {
     @IBOutlet weak var funfactlabel: UILabel!
     
     @IBOutlet weak var showfactbutton: UIButton!
-    
+    var oldcolor : UIColor = UIColor(red: 0.0, green: 0.0, blue: 0.0, alpha: 1.0)
+    var oldstring : String = ""
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
@@ -30,10 +31,28 @@ class ViewController: UIViewController {
 
     @IBAction func showfact() {
         println("pressed")
+       
         var col = colorw.randomcolor()
+        var randomstring = fbook.getrandomno()
+        
+       // var check = col
+        if(oldcolor == col || randomstring == oldstring) {
+            
+        col = colorw.randomcolor()
+            oldcolor = col
+            randomstring = fbook.getrandomno()
+            oldstring = randomstring
+            view.backgroundColor = col
+            showfactbutton.tintColor = col
+            funfactlabel.text = randomstring
+        }
+        else {
+            oldcolor = col
+          oldstring = randomstring
         view.backgroundColor = col
         showfactbutton.tintColor = col
-        funfactlabel.text = fbook.getrandomno()
+        funfactlabel.text = randomstring
+        }
     }
    /*@IBAction func showfact()
     {
