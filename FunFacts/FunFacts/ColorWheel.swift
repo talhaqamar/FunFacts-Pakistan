@@ -28,7 +28,10 @@ struct ColorWheel {
         
         UIColor(red: 150/255.0, green: 100/255.0, blue: 100/255.0, alpha: 1.0),
         
-        UIColor(red: 220/255.0, green: 50/255.0, blue: 100/255.0, alpha: 1.0)   ]
+        UIColor(red: 220/255.0, green: 50/255.0, blue: 100/255.0, alpha: 1.0)  ,
+        
+        UIColor(red: 220/255.0, green: 250/255.0, blue: 200/255.0, alpha: 1.0)
+    ]
     func randomcolor() -> UIColor
     {
         println("in random")
